@@ -8,17 +8,13 @@ hide: true
 # Lilian Wu Homepage
 
 <style>
-    /* Styles for Tic Tac Toe Game */
+
     .board {
         display: grid;
         grid-template-columns: repeat(3, 150px);
         gap: 5px;
         margin: 20px auto;
-        align-items: center;
         justify-content: center;
-        position: relative;
-        top: -1050px;
-        right: -400px;
     }
     .cell {
         width: 150px;
@@ -28,8 +24,7 @@ hide: true
         align-items: center;
         font-size: 5em;
         cursor: pointer;
-        border: 1px solid #333;
-        border-color: #FF0000;
+        border: 1px solid #e0d6ff;
     }
     .title {
         margin-bottom: 20px;
@@ -37,9 +32,6 @@ hide: true
         color: hotpink;
         text-align: center;
         font-family: cursive;
-        position: relative;
-        top: -800px;
-        right: -400px;
     }
     .button {
         padding: 10px 30px;
@@ -51,110 +43,20 @@ hide: true
         cursor: pointer;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: background-color 0.3s ease;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         font-family: Georgia, serif;
-        position: relative;
-        top: -980px;
-        right: -400px;
+        display: inline-block;
+        margin-top: 20px;
     }
     .button:hover {
         background-color: hotpink;
-        positive: relative;
-        
     }
     .container-tic-tac-toe {
         text-align: center;
-        margin-top: 20px;
-        top: 1050px;
-    }
-    
-    /* Existing styles */
-    .container {
-        width: 700px;
-        height: 800px;
-        background-color: #423275;
-        margin: 0 auto;
-        position: relative;
-        right: -400px;
-        top: 100px;
-        color: #ab92fc;
-        padding: 20px;
-        font-family: serif;
-        opacity: 0.6;
-        font-size: 18px;
-        line-height: 50px;
     }
 
-    .image-container {
-        display: inline-block;
-        padding: 10px;
-        border-radius: 30px;
-        background: linear-gradient(270deg, #30e8b9, #e830a8, #82f186, #309de8, #e83030);
-        background-size: 1000% 1000%;
-        -webkit-animation: AnimationName 31s ease infinite;
-        -moz-animation: AnimationName 31s ease infinite;
-        animation: AnimationName 31s ease infinite;
-        position: relative;
-        top: -700px;
-        left: 200px;
-        transform: translateX(-50%);
-    }
-
-    @-webkit-keyframes AnimationName {
-        0% { background-position: 0% 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0% 50% }
-    }
-    @-moz-keyframes AnimationName {
-        0% { background-position: 0% 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0% 50% }
-    }
-    @keyframes AnimationName {
-        0% { background-position: 0% 50% }
-        50% { background-position: 100% 50% }
-        100% { background-position: 0% 50% }
-    }
-
-    .image {
-        display: block;
-        border-radius: 24px;
-        width: 420px;
-        height: 400px;
-    }
-
-    #socials {
-        display: flex;
-        background-color: #423275;
-        width: 450px;
-        height: 100px;
-        margin: 10px;
-        position: relative;
-        top: -600px;
-        left: -30px;
-        opacity: 0.6;
-        justify-content: center;
-        align-items: center;
-    }
 </style>
 
 <body>
-    <!-- Homepage content -->
-    <div class="container">
-        <p>Hi! My name is Lilian Wu and I'm currently a junior in Del Norte High School. I took CSSE last year and am now taking CSA to gain a deeper understanding about Java. In my free time, I enjoy playing tennis, playing piano, playing with my cats, cooking, and improving my skill set.  In the future, I'm passionate about STEM and look forward to pursuing a career in this field, as I love learning and solving problems.</p>
-    </div>
-    <div class="image-container">
-        <img id="image" src="images/IMG_5299.png" alt="Me and my friend" class="image">
-    </div>
-    
-    <div id="socials">
-        <p><a href="https://github.com/LiliWuu"><img src="images/github.png" width="100" height="100"></a></p>
-        <p><a href="https://www.instagram.com/lilianw.w/"><img src="images/instagram.png" width="100" height="80"></a></p>
-        <p><a href="https://www.youtube.com/@lilianw6836"><img src="images/youtube.png" width="80" height="100"></a></p>
-    </div>
-
     <!-- Tic Tac Toe Game -->
     <h1 class="title">Tic Tac Toe</h1>
     <div class="board">

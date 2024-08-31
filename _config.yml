@@ -5,7 +5,7 @@ github_username: nighthawkcoders
 github_repo: "lilianw_2025" 
 baseurl: "/lilianw_2025"
 future: true
-remote_theme: jekyll/minima
+remote_theme: pages-themes/cayman@v0.2.0
 minima:
   skin: dark
   social_links:
@@ -20,9 +20,9 @@ minima:
 plugins:
   - jekyll-remote-theme
 header_pages:
-  - navigation/blog.md
+  #- navigation/blog.md
   - navigation/csa.md
-  - navigation/search.md
   - navigation/about.md
   - README4YML.md
+  - navigation/search.md
   
