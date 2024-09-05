@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>title</title>
+        <style>
+            .ball {
+                height: 150px;
+                width: 150px;
+                background-color: #000000;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            #triangle {
+                width: 0; 
+                height: 0; 
+                border-left: 40px solid transparent;
+                border-right: 40px solid transparent;
+                border-top: 60px solid rgb(255, 255, 255);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ball" id="ball">
+            <div id="triangle"></div>
+        </div>
+        
+    </body>
+</html>
+<script>
+    var ball = document.getElementById("ball");
+    var triangle = document.getElementById("triangle");
+    var text = document.createElementById("p");
+    triangle.appendChild(text);
+    ball.appendChild(triangle);
+</script>
