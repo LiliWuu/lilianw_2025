@@ -5,19 +5,24 @@
         <style>
             .grid-container {
                 display: flex;
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 10px;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 50px;
                 align-items: center;
                 position: relative;
+                top: 900px;
+                z-index: 1;
+                width: 55%;
+                height: auto;
+                font-size: small;
+                font-family: Georgia, 'Times New Roman', Times, serif;
               }
             .gridItem {
                 text-align: center;
             }
             .img {
-                width: 100%;
-                height: 100px;
                 object-fit: contain;
             }
             .p {
+
                 margin: 5px 0;
             }
         </style>
@@ -27,7 +32,7 @@
     </body>
 </html>
 <script>
-    var container = document.getElementById("grid-container");
+    var grid_container = document.getElementById("grid-container");
 
     const flags = [
         {"flag": "Chinese Flag", "Time Spent":"5 years", "Description": "I was born in the San Jose but moved to Beijing when I was two years old."},
@@ -45,7 +50,9 @@
         
         var desc = document.createElement("p");
         desc.innerText = flag["Time Spent"] + "\n" + flag.Description;
-        container.appendChild(gridItem);
+
+        
+        grid_container.appendChild(gridItem);
         gridItem.appendChild(img);
         gridItem.appendChild(desc);
 

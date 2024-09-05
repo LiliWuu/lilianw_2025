@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+{% include flag.html %} <!-- Ensure this is above the container element -->
+
 <style>
     .container {
         width: 700px;
