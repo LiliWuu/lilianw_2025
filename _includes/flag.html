@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Flags</title>
+        <style>
+            .grid-container {
+                display: flex;
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 10px;
+                align-items: center;
+                position: relative;
+              }
+            .gridItem {
+                text-align: center;
+            }
+            .img {
+                width: 100%;
+                height: 100px;
+                object-fit: contain;
+            }
+            .p {
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid-container" id="grid-container"></div>
+    </body>
+</html>
+<script>
+    var container = document.getElementById("grid-container");
+
+    const flags = [
+        {"flag": "Chinese Flag", "Time Spent":"5 years", "Description": "I was born in the San Jose but moved to Beijing when I was two years old."},
+        {"flag": "Californian Flag", "Time Spent": "9 years", "Description": "My family and I moved to San Diego because of my dad's work."},
+    ];
+
+    for (const flag of flags) {
+        var gridItem = document.createElement("div");
+        var img = document.createElement("img");
+        if (flag.flag == "Chinese Flag") {
+         img.src = "https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg";
+        } else {
+            img.src = "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg";
+        }
+        
+        var desc = document.createElement("p");
+        desc.innerText = flag["Time Spent"] + "\n" + flag.Description;
+        container.appendChild(gridItem);
+        gridItem.appendChild(img);
+        gridItem.appendChild(desc);
+
+    }
+</script>
