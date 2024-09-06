@@ -22,9 +22,12 @@
                 border-top: 60px solid rgb(255, 255, 255);
                 align-items: center;
                 justify-content: center;
-                position: relative;
             }
-            
+            #text {
+                color: rgb(0, 0, 0);
+                position: absolute;
+
+            }
             #fact {
                 color:rgb(255, 0, 0);
                 text-align: center;
@@ -35,6 +38,7 @@
     </head>
     <body>
         <div class="ball" id="ball">
+            <p id="text">8</p>
             <div id="triangle"></div>
             <p id="fact"></p>
         </div>
@@ -53,7 +57,7 @@
     ]
 
     var factElement = document.getElementById("fact");
-
+    var triangle = document.getElementById("triangle");
     function getRandomFact() {
         var rand = Math.floor(Math.random() * facts.length);
         var fact = facts[rand];
@@ -61,9 +65,11 @@
     }
 
     document.getElementById("ball").addEventListener("click", function() {
+            var text = document.getElementById("text");
+            text.style.color = "white";
             factElement.textContent = getRandomFact();
-
     });
+    triangle.appendChild("text");
 
 
 </script>
