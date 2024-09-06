@@ -12,6 +12,7 @@
                 align-items: center;
                 justify-content: center;
                 position: relative;
+                cursor: pointer;
             }
             #triangle {
                 width: 0; 
@@ -19,20 +20,52 @@
                 border-left: 40px solid transparent;
                 border-right: 40px solid transparent;
                 border-top: 60px solid rgb(255, 255, 255);
+                align-items: center;
+                justify-content: center;
+                position: relative;
             }
+            
+            #fact {
+                color:rgb(255, 0, 0);
+                text-align: center;
+                position: absolute;
+            }
+
         </style>
     </head>
     <body>
         <div class="ball" id="ball">
             <div id="triangle"></div>
+            <p id="fact"></p>
         </div>
         
-    </body>
-</html>
+
 <script>
-    var ball = document.getElementById("ball");
-    var triangle = document.getElementById("triangle");
-    var text = document.createElementById("p");
-    triangle.appendChild(text);
-    ball.appendChild(triangle);
+    const facts = [
+        {"0":"More than 30 million people live in caves in China"},
+        {"1":"Ketchup was invented in China, not America"},
+        {"2":"Ice cream making in China has dated back to 4000 years ago"},
+        {"3":"The word censorship is censored in China"},
+        {"4":"Geese are sometimes used instead of dogs for police animals in China"},
+        {"5":"The longest traffick jam lasted 12 days in Shanghai"},
+        {"6":"Many Chinese children keep crickets as pets"},
+        {"7":"Half of the world's pigs are in China"},
+    ]
+
+    var factElement = document.getElementById("fact");
+
+    function getRandomFact() {
+        var rand = Math.floor(Math.random() * facts.length);
+        var fact = facts[rand];
+        return Object.values(fact)[0];
+    }
+
+    document.getElementById("ball").addEventListener("click", function() {
+            factElement.textContent = getRandomFact();
+
+    });
+
+
 </script>
+</body>
+</html>
