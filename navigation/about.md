@@ -11,16 +11,18 @@ permalink: /about/
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 700px;
-        height: 800px;
-        position: relative;
+        text-align: center;
+        max-width: 700px; /* Set max-width instead of fixed width */
+        height: auto; /* Let the height adjust based on content */
         color: #ece6ff;
-        padding: 20px;
         font-family: serif;
         font-size: 18px;
-        line-height: 50px;
-        padding-top: 300px;
+        line-height: 1.5;
+        margin: 20px; /* Optional: Adds space around the container */
+        padding: 20px;
+        border-radius: 10px; /* Optional: rounded corners */
     }
+
     .image-container {
         display: inline-block;
         padding: 10px;
@@ -59,10 +61,10 @@ permalink: /about/
     /* flags */
         .grid-container {
             display: flex;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 50px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 200px;
             align-items: center;
             position: relative;
-            width: 500px;
+            width: 100%;
             height: 200px;
             font-size: small;
             font-family: Georgia, 'Times New Roman', Times, serif;
@@ -73,10 +75,6 @@ permalink: /about/
         }
         .img {
             object-fit: contain;
-        }
-        .p {
-
-            margin: 2px 0;
         }
 
     #socials {
