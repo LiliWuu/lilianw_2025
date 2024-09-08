@@ -76,27 +76,40 @@ permalink: /about/
 
     #socials {
         display: flex;
+        justify-content: center; 
+        align-items: center;  
+        gap: 20px; 
         background-color: #ad9ede;
-        width: 435px;
-        height: 50px;
-        margin: 10px;
-        position: relative;
+        width: 100%; 
+        height: 60px;
         opacity: 0.6;
-        justify-content: center;
-        align-items: center;
+        margin-top: 20px;
+        padding: 10px 0;
     }
 
+    #socials img {
+        width: 50px;  
+        height: 50px;  
+        vertical-align: middle;  
+    }
+
+    /* image gallery */
     .image-gallery {
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 10px;
+        color: #ab9fd1;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        padding: 20px;
     }
 
     .image-gallery img {
         max-height: 150px;
         object-fit: cover;
         border-radius: 5px;
+
     }
 
     .scroll-gallery {
@@ -145,9 +158,9 @@ permalink: /about/
 <div class="scroll-gallery" id="scroll-gallery"></div>
 
 <div id="socials">
-        <p><a href="https://github.com/LiliWuu"><img src="../images/github.png" width="50" height="50"></a></p>
-        <p><a href="https://www.instagram.com/lilianw.w/"><img src="../images/instagram.png" width="50" height="40"></a></p>
-        <p><a href="https://www.youtube.com/@lilianw6836"><img src="../images/youtube.png" width="40" height="50"></a></p>
+        <a href="https://github.com/LiliWuu"><img src="../images/git.png"></a>
+        <a href="https://www.instagram.com/lilianw.w/"><img src="../images/instagram.png"></a>
+        <a href="https://www.youtube.com/@lilianw6836"><img src="../images/youtube.png"></a>
 </div>
 
 <script>
