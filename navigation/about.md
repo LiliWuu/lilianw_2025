@@ -11,14 +11,13 @@ permalink: /about/
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        text-align: center;
         max-width: 700px; /* Set max-width instead of fixed width */
         height: auto; /* Let the height adjust based on content */
         color: #ece6ff;
         font-family: serif;
         font-size: 18px;
         line-height: 1.5;
-        margin: 20px; /* Optional: Adds space around the container */
+        margin: 50px; /* Optional: Adds space around the container */
         padding: 20px;
         border-radius: 10px; /* Optional: rounded corners */
     }
@@ -33,6 +32,7 @@ permalink: /about/
         -moz-animation: AnimationName 31s ease infinite;
         animation: AnimationName 31s ease infinite;
         position: relative;
+        margin-bottom: 40px;
     }
 
     @-webkit-keyframes AnimationName {
@@ -69,9 +69,6 @@ permalink: /about/
             font-size: small;
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin: 100px;
-          }
-        .gridItem {
-            text-align: center;
         }
         .img {
             object-fit: contain;
@@ -96,6 +93,29 @@ permalink: /about/
         gap: 10px;
     }
 
+    .image-gallery img {
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .scroll-gallery {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .scroll-gallery img {
+        max-height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .click {
+        cursor: pointer;
+    }
 </style>
 
 <div class="container">
@@ -104,20 +124,30 @@ permalink: /about/
         <img id="image" src="../images/IMG_5299.png" alt="Me and my friend" class="image">
     </div> 
     <p>Hi! My name is Lilian Wu and I'm currently a junior in Del Norte High School. I took CSSE last year and am now taking CSA to gain a deeper understanding about Java. In my free time, I enjoy playing tennis, playing piano, playing with my cats, cooking, and improving my skill set. I'm passionate about STEM and look forward to pursuing a career in this field, as I love learning and solving problems.</p>
+</div> 
 
-    <div id="socials">
+## My Values
+
+<div class="image-gallery">
+    <figure>
+        <img src="../images/fam.jpg" alt="fam+friends" class="click" id="family">
+        <figcaption>Family & Friends</figcaption>
+    </figure>
+    <figure>
+        <img src="../images/hobbies.jpg" alt="hobbies" class="click" id="hobbies">
+        <figcaption>Hobbies</figcaption>
+    </figure>
+    <figure>
+        <img src="../images/cultural.jpg" alt="culture" class="click" id="culture">
+        <figcaption>Culture</figcaption>
+    </figure>
+</div>
+<div class="scroll-gallery" id="scroll-gallery"></div>
+
+<div id="socials">
         <p><a href="https://github.com/LiliWuu"><img src="../images/github.png" width="50" height="50"></a></p>
         <p><a href="https://www.instagram.com/lilianw.w/"><img src="../images/instagram.png" width="50" height="40"></a></p>
         <p><a href="https://www.youtube.com/@lilianw6836"><img src="../images/youtube.png" width="40" height="50"></a></p>
-    </div>
-</div> 
-
-
-
-
-
-<div class="image-gallery">
-
 </div>
 
 <script>
@@ -144,6 +174,55 @@ permalink: /about/
         grid_container.appendChild(gridItem);
         gridItem.appendChild(img);
         gridItem.appendChild(desc);
-
     }
+
+    //img gallery
+
+    const gallery_images = {
+        family: [
+            "../images/1.1.jpg",
+            "../images/1.2.jpg",
+            "../images/1.3.jpg",
+            "../images/1.4.jpg",
+            "../images/1.5.jpg",
+            "../images/1.6.jpg",
+            "../images/1.7.jpg",
+            "../images/1.8.jpg",
+            "../images/1.9.jpg",
+            "../images/1.10.jpg",
+            "../images/1.11.jpg",
+            "../images/1.12.jpg",
+            "../images/1.13.jpg",
+            "../images/1.14.jpg",
+            "../images/1.15.jpg",
+            "../images/1.16.jpg",
+            "../images/1.17.jpg",
+        ],
+        hobbies: [
+            
+        ],
+        culture: [
+
+        ]
+    };
+
+    function loadGallery(category) {
+        var scroll_gallery = document.getElementById("scroll-gallery");
+        scroll_gallery.innerHTML = '';
+
+        var images = gallery_images[category];
+
+        for (let i = 0; i < images.length; i++) {
+            var image = document.createElement("img");
+            image.src = images[i];
+            scroll_gallery.appendChild(image);
+        }
+    }
+    document.querySelectorAll(".click").forEach(item => {
+        item.addEventListener("click", function() {
+            loadGallery(this.id);
+        });
+    });
+    
+
 </script>
