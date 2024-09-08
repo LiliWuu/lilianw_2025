@@ -11,15 +11,15 @@ permalink: /about/
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        max-width: 700px; /* Set max-width instead of fixed width */
-        height: auto; /* Let the height adjust based on content */
-        color: #ece6ff;
+        max-width: 700px; 
+        height: auto; 
+        color: #ab9fd1;
         font-family: serif;
         font-size: 18px;
         line-height: 1.5;
-        margin: 50px; /* Optional: Adds space around the container */
+        margin: 50px; 
         padding: 20px;
-        border-radius: 10px; /* Optional: rounded corners */
+        border-radius: 10px; 
     }
 
     .image-container {
@@ -61,7 +61,7 @@ permalink: /about/
     /* flags */
         .grid-container {
             display: flex;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */gap: 200px;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 200px;
             align-items: center;
             position: relative;
             width: 100%;
@@ -180,29 +180,50 @@ permalink: /about/
 
     const gallery_images = {
         family: [
-            "../images/1.1.jpg",
-            "../images/1.2.jpg",
-            "../images/1.3.jpg",
-            "../images/1.4.jpg",
-            "../images/1.5.jpg",
-            "../images/1.6.jpg",
-            "../images/1.7.jpg",
-            "../images/1.8.jpg",
-            "../images/1.9.jpg",
-            "../images/1.10.jpg",
-            "../images/1.11.jpg",
-            "../images/1.12.jpg",
-            "../images/1.13.jpg",
-            "../images/1.14.jpg",
-            "../images/1.15.jpg",
-            "../images/1.16.jpg",
-            "../images/1.17.jpg",
+            "../images/gallery/1.1.jpg",
+            "../images/gallery/1.2.jpg",
+            "../images/gallery/1.3.jpg",
+            "../images/gallery/1.4.jpg",
+            "../images/gallery/1.5.jpg",
+            "../images/gallery/1.6.jpg",
+            "../images/gallery/1.7.jpg",
+            "../images/gallery/1.8.jpg",
+            "../images/gallery/1.9.jpg",
+            "../images/gallery/1.10.jpg",
+            "../images/gallery/1.11.jpg",
+            "../images/gallery/1.12.jpg",
+            "../images/gallery/1.13.jpg",
+            "../images/gallery/1.14.jpg",
+            "../images/gallery/1.15.jpg",
+            "../images/gallery/1.16.jpg",
+            "../images/gallery/1.17.jpg",
         ],
         hobbies: [
-            
+            "../images/gallery/2.1.jpg",
+            "../images/gallery/2.2.jpg",
+            "../images/gallery/2.3.jpg",
+            "../images/gallery/2.4.jpg",
+            "../images/gallery/2.5.jpg",
+            "../images/gallery/2.6.jpg",
+            "../images/gallery/2.7.jpg",
+            "../images/gallery/2.8.jpg",
+            "../images/gallery/2.9.jpg",
+            "../images/gallery/2.10.jpg",
+            "../images/gallery/2.11.jpg",
         ],
         culture: [
-
+            "../images/gallery/3.1.jpg",
+            "../images/gallery/3.2.jpg",
+            "../images/gallery/3.3.jpg",
+            "../images/gallery/3.4.jpg",
+            "../images/gallery/3.5.jpg",
+            "../images/gallery/3.6.jpg",
+            "../images/gallery/3.7.jpg",
+            "../images/gallery/3.8.jpg",
+            "../images/gallery/3.9.jpg",
+            "../images/gallery/3.10.jpg",
+            "../images/gallery/3.11.jpg",
+            "../images/gallery/3.12.jpg",
         ]
     };
 
