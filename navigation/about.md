@@ -141,7 +141,7 @@ permalink: /about/
 </div> 
 
 ## My Values
-
+>  ↓↓↓  Click me!!  ↓↓↓
 <div class="image-gallery">
     <figure>
         <img src="../images/fam.jpg" alt="fam+friends" class="click" id="family">
