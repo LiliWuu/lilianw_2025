@@ -64,7 +64,7 @@ permalink: /traveling/active/
         {
             "link": "3b1a18a6-e174-4868-93c9-1e3232efb534", 
             "title":"Rio De Janeiro Helicopter Flight Tour", "description": "Rio De Janeiro Helicopter Flight Tour will allow the tourist to see the wonders of Rio in a short, fast, and unforgettable journey.", 
-            "locationLink": "/traveling/nature/rio/"
+            "locationLink": "/traveling/rio/"
         },
     ];
 
