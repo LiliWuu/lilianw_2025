@@ -136,7 +136,8 @@ permalink: /about/
     <div class="image-container">
         <img id="image" src="../images/IMG_5299.png" alt="Me and my friend" class="image">
     </div> 
-    <p>Hi! My name is Lilian Wu and I'm currently a junior in Del Norte High School. I took CSSE last year and am now taking CSA to gain a deeper understanding about Java. In my free time, I enjoy playing tennis, playing piano, playing with my cats, cooking, and improving my skill set. I'm passionate about STEM and look forward to pursuing a career in this field, as I love learning and solving problems.</p>
+    <p>
+    Hi! My name is Lilian Wu and I'm currently a junior in Del Norte High School. I took CSSE last year and am now taking CSA to gain a deeper understanding about Java. In my free time, I enjoy playing tennis, playing piano, playing with my cats, cooking, and improving my skill set. I'm passionate about STEM and look forward to pursuing a career in this field, as I love learning and solving problems.</p>
 </div> 
 
 ## My Values
@@ -240,23 +241,63 @@ permalink: /about/
         ]
     };
 
+    const gallery_descriptions = {
+    family: [
+        "👨‍👩‍👧‍👦 I have a family of four",
+        "🐱 I own four cats even though I'm allergic to them",
+        "✈️ My family likes to travel",
+        "👭 I'm been with some of my friends since elementary school"
+    ],
+    hobbies: [
+        "🎹 I started playing the piano when I was seven",
+        "🎾 I've been playing tennis for two years, ever since I quit swimming",
+        "🍰 In my free time I like to bake (and cook)",
+    ],
+    culture: [
+        "🌶️ I like spicy food, and my favorite chinese dish is Huigou Rou",
+        "🇨🇳 My family likes to travel to China",
+        "🏛️ My favorite part of China is the food, the historical sites, and the way of living",
+    ]
+};
+
     function loadGallery(category) {
-        var scroll_gallery = document.getElementById("scroll-gallery");
-        scroll_gallery.innerHTML = '';
+    var scroll_gallery = document.getElementById("scroll-gallery");
+    scroll_gallery.innerHTML = ''; 
 
-        var images = gallery_images[category];
-
-        for (let i = 0; i < images.length; i++) {
-            var image = document.createElement("img");
-            image.src = images[i];
-            scroll_gallery.appendChild(image);
-        }
+    var existingDescContainer = document.querySelector(".desc-container");
+    if (existingDescContainer) {
+        existingDescContainer.remove();
     }
-    document.querySelectorAll(".click").forEach(item => {
-        item.addEventListener("click", function() {
-            loadGallery(this.id);
-        });
+    var images = gallery_images[category]; 
+    var descriptions = gallery_descriptions[category]; 
+
+    var descList = document.createElement("ul");
+
+    for (let i = 0; i < images.length; i++) {
+        var image = document.createElement("img");
+        image.src = images[i];
+        scroll_gallery.appendChild(image);
+    }
+
+    var descContainer = document.createElement("div");
+    descContainer.className = "desc-container"; 
+    for (let i = 0; i < descriptions.length; i++) {
+        
+        var listItem = document.createElement("li");
+        listItem.innerText = descriptions[i] || "Description not available"; 
+        descList.appendChild(listItem);
+    }
+
+    descContainer.appendChild(descList);
+    scroll_gallery.parentNode.appendChild(descContainer);
+}
+
+
+// Adding event listeners for the category buttons
+document.querySelectorAll(".click").forEach(item => {
+    item.addEventListener("click", function() {
+        loadGallery(this.id); // Load the gallery based on the clicked category
     });
-    
+});
 
 </script>
