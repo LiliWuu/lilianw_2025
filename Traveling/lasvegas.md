@@ -3,7 +3,19 @@ layout: page
 title: Las Vegas
 permalink: /traveling/lasvegas/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/0c5aea9a-e762-4e85-af52-79b4d431aadd');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Las Vegas, often referred to as "Sin City," is a vibrant city in the Nevada desert known for its entertainment, casinos, and nightlife. Famous for its luxurious resorts, world-class shows, and bustling casinos, Las Vegas offers a unique and exciting experience. Beyond the Strip, visitors can explore stunning natural landscapes and enjoy a range of dining and shopping options.
 

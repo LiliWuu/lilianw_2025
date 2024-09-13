@@ -3,7 +3,19 @@ layout: page
 title: Yucatan Peninsula
 permalink: /traveling/yucatan/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/06e8b13d-788f-4537-851f-cbf90b72cad8');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 The Yucatán Peninsula, located in southeastern Mexico, is known for its rich history, Mayan ruins, stunning beaches, and vibrant culture. The region offers a unique blend of ancient traditions and modern attractions, with highlights ranging from the world-famous Chichen Itza to the beautiful beaches of the Riviera Maya. Visitors can explore cenotes, relax in colonial towns like Mérida, or dive into the vibrant marine life of the Caribbean Sea. Yucatán’s combination of history, nature, and culture makes it a top travel destination.
 

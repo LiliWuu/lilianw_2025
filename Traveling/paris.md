@@ -3,7 +3,19 @@ layout: page
 title: Paris
 permalink: /traveling/paris/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/7d08d474-b376-4edc-9870-6cec71b79178');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Paris, the capital city of France, is renowned for its rich history, stunning architecture, and vibrant cultural scene. Known as "The City of Light," Paris is famous for its iconic landmarks, world-class museums, and charming neighborhoods. From the Eiffel Tower to the Louvre Museum, Paris offers a wealth of experiences for art lovers, history enthusiasts, and romantics alike. Its picturesque streets, elegant cafes, and historical landmarks make it one of the most visited and beloved cities in the world.
 

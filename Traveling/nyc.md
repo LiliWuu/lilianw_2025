@@ -3,7 +3,19 @@ layout: page
 title: New York City
 permalink: /traveling/nyc/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/4e906d47-282b-4725-bac5-13bb81c8a9b5');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 New York City, often referred to as "The Big Apple," is a bustling metropolis known for its iconic landmarks, diverse neighborhoods, and vibrant cultural scene. As one of the most influential cities in the world, NYC offers a dynamic mix of world-class museums, Broadway shows, historic sites, and renowned culinary experiences. With its towering skyscrapers, vibrant street life, and global influence, New York City is a must-visit destination for travelers seeking an urban adventure.
 

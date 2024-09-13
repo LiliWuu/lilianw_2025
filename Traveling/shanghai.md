@@ -3,7 +3,19 @@ layout: page
 title: Shanghai
 permalink: /traveling/shanghai/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/b67fadf6-2cd2-4281-8938-d4a869b93a57');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Shanghai, China’s largest city, is a dynamic metropolis known for its futuristic skyline, historic landmarks, and vibrant cultural scene. As a global financial hub, Shanghai seamlessly blends modernity with tradition. The city boasts an impressive array of skyscrapers, bustling shopping districts, and serene historic neighborhoods. From the iconic Bund to the serene Yu Garden, Shanghai offers a diverse range of experiences for visitors.
 

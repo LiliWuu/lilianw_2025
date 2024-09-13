@@ -3,7 +3,19 @@ layout: page
 title: Goa
 permalink: /traveling/goa/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/3fed91b3-d2de-4dcc-846b-7cdbef15c7c5');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Goa, located on the southwestern coast of India, is renowned for its picturesque beaches, vibrant nightlife, and rich cultural heritage. This former Portuguese colony offers a unique blend of Indian and European influences, with charming colonial architecture, lush landscapes, and a relaxed coastal vibe. Goa is a popular destination for both relaxation and adventure, attracting tourists with its beautiful beaches, historic sites, and lively festivals.
 

@@ -3,7 +3,19 @@ layout: page
 title: Greece
 permalink: /traveling/greece/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/ea2ba575-ce39-4180-85aa-f20bc891cfa3');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Greece, located in southeastern Europe, is renowned for its rich historical legacy, stunning landscapes, and vibrant culture. Known as the cradle of Western civilization, Greece offers a unique blend of ancient ruins, beautiful islands, and charming cities. Visitors can explore archaeological sites, relax on picturesque beaches, and enjoy traditional Greek cuisine and hospitality.
 

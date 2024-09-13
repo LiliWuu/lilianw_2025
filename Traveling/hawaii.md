@@ -3,7 +3,19 @@ layout: page
 title: Hawaii
 permalink: /traveling/hawaii/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/8ad25429-8e8a-4214-9be2-d3ae549af542');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Hawaii, an enchanting archipelago in the central Pacific Ocean, is celebrated for its stunning natural beauty, diverse landscapes, and vibrant culture. Comprising eight main islands, Hawaii offers everything from pristine beaches and lush rainforests to volcanic landscapes and rich Polynesian heritage. Each island has its unique charm and attractions, making Hawaii a top destination for relaxation, adventure, and cultural exploration.
 

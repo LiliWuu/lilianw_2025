@@ -3,7 +3,19 @@ layout: page
 title: Rio de Janeiro
 permalink: /traveling/rio/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/05a2276b-5978-4f36-b452-2a93ee7644e5');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Rio de Janeiro, often simply called Rio, is a vibrant city located on the southeastern coast of Brazil. Known for its stunning beaches, lively carnival celebrations, and iconic landmarks, Rio de Janeiro offers a mix of natural beauty and urban excitement. The city is famous for its breathtaking views, including the iconic Christ the Redeemer statue and Sugarloaf Mountain, as well as its energetic samba music and colorful festivals.
 

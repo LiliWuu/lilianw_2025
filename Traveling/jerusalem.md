@@ -3,7 +3,19 @@ layout: page
 title: Jerusalem
 permalink: /traveling/jerusalem/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/4a531758-db5c-4c53-9f08-255c36f65b04');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Jerusalem, one of the world’s oldest cities, holds profound religious and historical significance for Judaism, Christianity, and Islam. Located in the Middle East, this ancient city is a melting pot of cultures and religions, with its storied streets, holy sites, and vibrant markets. Jerusalem’s rich heritage is reflected in its stunning architecture, religious landmarks, and bustling neighborhoods, making it a captivating destination for history enthusiasts and spiritual seekers alike.
 

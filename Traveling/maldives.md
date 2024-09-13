@@ -3,7 +3,19 @@ layout: page
 title: Maldives
 permalink: /traveling/maldives/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/8eafa920-34d0-413f-a673-d3830000d9aa');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 The Maldives, an idyllic tropical paradise in the Indian Ocean, is renowned for its stunning white-sand beaches, crystal-clear turquoise waters, and luxurious overwater bungalows. Comprising over 1,000 coral islands and 26 atolls, the Maldives offers unparalleled natural beauty and is a popular destination for honeymooners, divers, and those seeking a tranquil escape. Its vibrant marine life, stunning coral reefs, and luxurious resorts make it a premier destination for relaxation and adventure.
 

@@ -3,7 +3,19 @@ layout: page
 title: Phoenix
 permalink: /traveling/phoenix/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/2c8a13f5-3da9-475c-89c0-b30bc4ca77ef');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Phoenix, the capital of Arizona, is a vibrant city known for its stunning desert landscapes, modern amenities, and rich cultural scene. Nestled in the Valley of the Sun, Phoenix offers a blend of outdoor adventure, cultural attractions, and a burgeoning culinary scene. With its sunny weather and proximity to natural wonders like the Grand Canyon and Sedona, Phoenix is an appealing destination for both relaxation and exploration.
 

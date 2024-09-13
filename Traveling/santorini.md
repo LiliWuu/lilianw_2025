@@ -3,7 +3,19 @@ layout: page
 title: Santorini
 permalink: /traveling/santorini/
 ---
-
+<style>
+.page-header {
+    background-image: url('https://github.com/user-attachments/assets/41b9da1b-a676-4ea5-b9ce-e7aa55c35e3b');
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the image */
+    height: 300px; /* Adjust the height as necessary */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for text readability */
+}
+</style>
 ## Overview
 Santorini, a stunning island in the Aegean Sea, is part of Greece’s Cyclades group of islands. Known for its dramatic landscapes, white-washed buildings with blue domes, and breathtaking sunsets, Santorini is a popular destination for romance and relaxation. The island’s unique volcanic terrain offers spectacular views, beautiful beaches, and a rich history. Santorini’s charming villages, crystal-clear waters, and delicious cuisine make it a must-visit for travelers seeking an idyllic getaway.
 
