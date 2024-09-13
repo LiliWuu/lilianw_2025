@@ -110,19 +110,19 @@ comments: true
             tropical: [
             { value: 'goa, india', text: 'Goa, India' },
             { value: 'cancun, mexico', text: 'Cancun, Mexico' },
-            { value: 'rio de janeiro, brazil', text: 'Rio de Janeiro, Brazil' },
+            { value: 'rio, brazil', text: 'Rio de Janeiro, Brazil' },
             { value: 'bangkok, thailand', text: 'Bangkok, Thailand' },
-            { value: 'yucatan peninsula, mexico', text: 'Yucatan Peninsula, Mexico' },
+            { value: 'yucatan, mexico', text: 'Yucatan Peninsula, Mexico' },
             ],
             island: [
                 { value: 'hawaii, USA', text: 'Hawaii, USA' },
-                { value: 'bora bora, french polynesia', text: 'Bora Bora, French Polynesia' },
+                { value: 'borabora, french polynesia', text: 'Bora Bora, French Polynesia' },
                 { value: 'Bahrain', text: 'Bahrain' },
                 { value: 'maldives', text: 'Maldives' },
                 { value: 'santorini, greece', text: 'Santorini, Greece' },
             ],
             city:[
-                { value: 'new york city, USA', text: 'New York City, USA' },
+                { value: 'nyc, USA', text: 'New York City, USA' },
                 { value: 'paris, france', text: 'Paris, France' },
                 { value: 'london, england', text: 'London, England' },
                 { value: 'tokyo, japan', text: 'Tokyo, Japan' },
@@ -130,7 +130,7 @@ comments: true
             ],
              desert: [
                 { value: 'cairo, egypt', text: 'Cairo, Egypt' },
-                { value: 'las vegas, USA', text: 'Las Vegas, USA' },
+                { value: 'lasvegas, USA', text: 'Las Vegas, USA' },
                 { value: 'phoenix, arizona', text: 'Phoenix, Arizona' },
                 { value: 'fez, morocco', text: 'Fez, Morocco' },
                 { value: 'jerusalem, israel/palestine', text: 'Jerusalem, Israel/Palestine' },
