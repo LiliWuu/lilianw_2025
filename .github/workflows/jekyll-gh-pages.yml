@@ -50,6 +50,11 @@ jobs:
       - name: Build with Jekyll
         run: |
           bundle exec jekyll build  # Build your Jekyll site
+      - name: Ensure upload-artifact is available
+        uses: actions/upload-artifact@v3
+        with:
+          name: dummy
+          path: README.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
