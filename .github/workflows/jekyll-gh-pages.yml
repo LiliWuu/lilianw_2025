@@ -2,63 +2,64 @@
 name: Deploy Jekyll with GitHub Pages dependencies preinstalled
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1' # Set this to your desired Ruby version
+          ruby-version: '3.1'
           bundler-cache: true
+
       - name: Install Jekyll and dependencies
         run: |
           gem install bundler
           bundle install
+
       - name: Install Python dependencies
         run: |
-          python -m venv venv  # Create virtual environment
-          source venv/bin/activate  # Activate the virtual environment
-          pip install -r requirements.txt  # Install Python packages
+          python -m venv venv
+          source venv/bin/activate
+          pip install -r requirements.txt
 
       - name: Execute conversion script
         run: |
-          source venv/bin/activate  # Activate virtual environment
-          python scripts/convert_notebooks.py  # Run your Python script
+          source venv/bin/activate
+          python scripts/convert_notebooks.py
+
       - name: Build with Jekyll
         run: |
-          bundle exec jekyll build  # Build your Jekyll site
-      - name: Pull working version of upload-artifact to prevent metadata error
+          bundle exec jekyll build
+
+      # Force load v4 of upload-artifact early
+      - name: Preload upload-artifact v4
         uses: actions/upload-artifact@v4
         with:
-          name: dummy-artifact
+          name: noop
           path: README.md
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1 
 
-  # Deployment job
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: ./_site  # Path to your built Jekyll site (change if needed)
+
   deploy:
     environment:
       name: github-pages
