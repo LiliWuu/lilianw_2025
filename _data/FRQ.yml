@@ -1,0 +1,46 @@
+Title: AP CSA FRQ Topics
+Description: Explore the four types of Free Response Questions (FRQs) on the AP Computer Science A Exam. Each type targets different essential programming skills.
+Topics:
+  - title: "FRQ 1: Methods and Control Structures"
+    image: /exam_work/frq1-methods.jpg
+    link: /csa/frq1/
+    alt: Methods and Control
+    keyPoints:
+      - Write method code given method signature
+      - Use conditional and iterative statements
+      - Understand method return values
+    subtitle: Overview
+    description: This question focuses on writing a method with conditionals and loops. Students are asked to implement core logic based on a description.
+
+  - title: "FRQ 2: Classes"
+    image: /exam_work/frq2-classes.jpg
+    link: /csa/frq2/
+    alt: Classes and Constructors
+    keyPoints:
+      - Write a class with constructors and instance variables
+      - Include accessor and mutator methods
+      - Apply encapsulation and object behavior
+    subtitle: Overview
+    description: Tests knowledge of class structure, encapsulation, and object behavior through writing a new class or modifying an existing one.
+
+  - title: "FRQ 3: Array/ArrayList"
+    image: /exam_work/frq3-arrays.jpg
+    link: /csa/frq3/
+    alt: Arrays and ArrayLists
+    keyPoints:
+      - Iterate through arrays or ArrayLists
+      - Apply standard algorithms
+      - Modify elements conditionally
+    subtitle: Overview
+    description: Focuses on looping through data structures like arrays and ArrayLists, performing updates, and returning calculated results.
+
+  - title: "FRQ 4: 2D Array"
+    image: /exam_work/frq4-2darray.jpg
+    link: /csa/frq4/
+    alt: 2D Array Traversal
+    keyPoints:
+      - Nested loops for 2D array traversal
+      - Update and count elements
+      - Identify values across rows and columns
+    subtitle: Overview
+    description: Requires traversing a 2D array using nested loops to process and return information according to a prompt.

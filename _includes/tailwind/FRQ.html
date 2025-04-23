@@ -1,0 +1,34 @@
+<div>
+    {% assign data = site.data[page.FRQ] %}
+    <div class="container mx-auto px-6 py-10">
+      <!-- Title and Description -->
+      <div class="text-center mb-10">
+        <h1 class="text-5xl font-bold">{{ data.Title }}</h1>
+        <p class="text-lg mt-4">{{ data.Description }}</p>
+      </div>
+  
+      <!-- Grid Section -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {% for topic in data.Topics %}
+          <div class="relative group rounded-lg overflow-hidden shadow-lg">
+            <!-- Image with dark overlay -->
+            <img src="{{ site.baseurl }}/images/{{ topic.image }}"
+                 alt="{{ topic.alt }}"
+                 class="w-full h-64 object-cover transform transition duration-300 group-hover:brightness-50">
+  
+            <!-- Hover Buttons -->
+            <div class="absolute inset-0 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition duration-300 space-y-2">
+              <a href="{{ site.baseurl }}{{ topic.classLink }}"
+                 class="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-200 font-semibold">
+                Class Material
+              </a>
+              <a href="{{ site.baseurl }}{{ topic.personalLink }}"
+                 class="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-200 font-semibold">
+                Personal FRQ Work
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
