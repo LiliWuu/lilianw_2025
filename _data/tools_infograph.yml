@@ -5,8 +5,6 @@ Topics:
     image: "/exam_work/primitive-data-types.png"
     link: "/nothing"
     alt: "Primitive Types"
-    classLink: "/csa/frq1/class/"
-    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - "Understanding and declaring primitive data types (int, double, boolean)"
       - "Using arithmetic operators and expressions"
@@ -19,8 +17,6 @@ Topics:
     image: "/exam_work/objects.png"
     link: "/csa/unit2/period3/home/"
     alt: "Objects"
-    classLink: "/csa/frq1/class/"
-    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - "Creating and using objects"
       - "Calling methods and understanding method overloading"
@@ -33,8 +29,6 @@ Topics:
     image: "/exam_work/boolean-expressions-if-statements.png"
     link: "/csa/unit3-p1/unit3-6"
     alt: "Boolean Expressions and If Statements"
-    classLink: "/csa/frq1/class/"
-    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - "Writing and evaluating Boolean expressions"
       - "Using relational and logical operators"
@@ -47,8 +41,6 @@ Topics:
     image: "/exam_work/iteration.png"
     link: "/csa/unit4-p1/unit4-3"
     alt: "Iteration"
-    classLink: "/csa/frq1/class/"
-    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - "Implementing while, for, and do-while loops"
       - "Nested loops and loop control structures"
@@ -61,8 +53,6 @@ Topics:
     image: "/exam_work/classes.png"
     link: "/csa/p1-frq-classes/approach"
     alt: "Writing Classes"
-    classLink: "/csa/frq1/class/"
-    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - "Defining classes and creating objects"
       - "Writing constructors and methods"

@@ -5,6 +5,8 @@ Topics:
     image: /exam_work/frq1-methods.jpg
     link: /csa/frq1/
     alt: Methods and Control
+    classLink: "/methods_per3/quick_review"
+    personalLink: "/methods_per3/quick_review"
     keyPoints:
       - Write method code given method signature
       - Use conditional and iterative statements
@@ -16,6 +18,8 @@ Topics:
     image: /exam_work/frq2-classes.jpg
     link: /csa/frq2/
     alt: Classes and Constructors
+    classLink: "/csa/p1-frq-classes/approach"
+    personalLink: "/csa/p1-frq-classes/approach"
     keyPoints:
       - Write a class with constructors and instance variables
       - Include accessor and mutator methods
@@ -27,6 +31,8 @@ Topics:
     image: /exam_work/frq3-arrays.jpg
     link: /csa/frq3/
     alt: Arrays and ArrayLists
+    classLink: "/teamteach/array/strategies"
+    personalLink: "/teamteach/array/strategies"
     keyPoints:
       - Iterate through arrays or ArrayLists
       - Apply standard algorithms
@@ -38,6 +44,8 @@ Topics:
     image: /exam_work/frq4-2darray.jpg
     link: /csa/frq4/
     alt: 2D Array Traversal
+    classLink: "/csa/p3-2darrays2"
+    personalLink: "/csa/frq1/mywork/"
     keyPoints:
       - Nested loops for 2D array traversal
       - Update and count elements
