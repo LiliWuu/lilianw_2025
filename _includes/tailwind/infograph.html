@@ -30,7 +30,7 @@
           <!-- Description Column -->
           <div>
             <h3 class="text-xl font-semibold mb-2">{{ topic.subtitle }}</h3>
-            <p class="text-sm">{{ topic.description }}</p>
+            <p class="text-sm">{{ topic.description | markdownify }}</p>
           </div>
         </div>
       {% endfor %}
