@@ -6,7 +6,7 @@ Topics:
     link: /csa/frq1/
     alt: Methods and Control
     classLink: "/methods_per3/quick_review"
-    personalLink: "/methods_per3/quick_review"
+    personalLink: "/csa/home/method-control-structures"
     keyPoints:
       - Write method code given method signature
       - Use conditional and iterative statements
@@ -19,7 +19,7 @@ Topics:
     link: /csa/frq2/
     alt: Classes and Constructors
     classLink: "/csa/p1-frq-classes/approach"
-    personalLink: "/csa/p1-frq-classes/approach"
+    personalLink: "/csa/home/classes"
     keyPoints:
       - Write a class with constructors and instance variables
       - Include accessor and mutator methods
@@ -32,7 +32,7 @@ Topics:
     link: /csa/frq3/
     alt: Arrays and ArrayLists
     classLink: "/teamteach/array/strategies"
-    personalLink: "/teamteach/array/strategies"
+    personalLink: "/csa/home/array-arraylist"
     keyPoints:
       - Iterate through arrays or ArrayLists
       - Apply standard algorithms
@@ -45,7 +45,7 @@ Topics:
     link: /csa/frq4/
     alt: 2D Array Traversal
     classLink: "/csa/p3-2darrays2"
-    personalLink: "/csa/frq1/mywork/"
+    personalLink: "/csa/home/2D-array"
     keyPoints:
       - Nested loops for 2D array traversal
       - Update and count elements
